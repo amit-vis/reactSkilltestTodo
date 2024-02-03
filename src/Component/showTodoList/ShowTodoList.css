@@ -1,0 +1,63 @@
+.todo-container{
+    font-size: 1.3rem;
+    list-style: none;
+    text-align: center;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 5% 18%;
+    background-color: rgb(129, 160, 160);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 2px solid rgb(52, 86, 20);
+    margin-top: -4%;
+}
+.check-box{
+    transform: scale(2);
+    visibility: hidden;
+    margin-left: 2%;
+}
+.check-box-vis{
+    transform: scale(2);
+    visibility: visible;
+    margin-left: 2%;
+}
+.check-box-vis:checked+span{
+    text-decoration: line-through;
+    color: rgb(92, 81, 81);
+
+}
+
+.list-item:hover .check-box{
+    visibility: visible;
+}
+.icon-container{
+    margin-right: 4%;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-container{
+    width: 16%;
+    margin-left: 2%;
+}
+select{
+    width: 65%;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+.select-label{
+    color: rgb(142, 124, 124);
+    font-weight: 700;
+    display: block;
+    text-align: left;
+    padding-bottom: 2%;
+}

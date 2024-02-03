@@ -1,3 +1,4 @@
+Created Todo app using API also here we have add data using Post, we have edited the data using Put, also we have deleted the data using deleted.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+* public
+* src
+    * Component
+        * AddTodo
+            - AddTodo.css
+            - AddTodo.js
+        * showTodoList
+            - showTodoList.css
+            - showTodoList.js
+        - Navbar.css
+        - Navbar.js
+    * ContextApi
+        - ContextApi.js
+    - App.css
+    - App.js
+    - index.css
+    - index.js
+    - .gitignore
