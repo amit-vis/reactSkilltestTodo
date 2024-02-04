@@ -1,6 +1,6 @@
 Created Todo app using API also here we have add data using Post, we have edited the data using Put, also we have deleted the data using deleted.
 
-hosted Link:-https://react-skilltest-todo.vercel.app/
+hosted Link:-https://react-skilltest-todo-s7f8.vercel.app/
 
 # Getting Started with Create React App
 
