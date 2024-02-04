@@ -18,7 +18,7 @@ function CustomItemContext({children}){
     const [postData, setPostData] = useState('');
     const [editData, setEditData] = useState(null);
     const [filterData, setFiltedData] = useState([]);
-    const [selectFilter, setSelectFilter] = useState('all')
+    const [selectFilter, setSelectFilter] = useState('all');
 
     // handle the filter feature here
     useEffect(()=>{
@@ -63,7 +63,6 @@ function CustomItemContext({children}){
                 'content-type': 'application/json'
             },
             body: JSON.stringify({
-                userId: 1,
                 title: postData,
                 completed: false
             })
@@ -99,8 +98,8 @@ function CustomItemContext({children}){
     // handle the edit text
     const handleEdit = (id)=>{
         setEditData(id)
-        const todoItem = data[id-1]
-        setPostData(todoItem.title)
+        const findIndex = data.find((index)=>index.id===id)
+        setPostData(findIndex.title)
     }
 
     // handle the update functionality here
@@ -117,8 +116,7 @@ function CustomItemContext({children}){
                 },
                 body:JSON.stringify({
                     title: postData,
-                    completed: !data.completed,
-                    userId: data.userId
+                    completed: false
                 }),
             });
             const jsonUpdatedTask = await res.json();

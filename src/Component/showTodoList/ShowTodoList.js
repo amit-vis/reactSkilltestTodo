@@ -6,7 +6,6 @@ import { ToastContainer } from "react-toastify";
 export function ShowTodo() {
 
     const { ToggleChecked,handleDelete,handleEdit,filterData,selectFilter, setSelectFilter } = useValue();
-    
     return (
         <>
             <h1>Todo List</h1>

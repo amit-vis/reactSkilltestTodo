@@ -5,7 +5,7 @@ import { useValue } from '../../ContextApi/contextAPI';
 
 export function AddTodo() {
     const {postData, setPostData, handlePost, editData,handleUpdate} = useValue();
-    console.log(postData)
+    
     return (
         <>
         {/* form container and input form and submit button implement here */}
